@@ -5,50 +5,114 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <html>
-	<head>
-		<title>Project 2 by Zelin and Justin</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
+    <head>
+        <title>Beneath the Dream</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <style>
+            body {
+                display: flex;
+                margin: 0;
+                font-family: Arial, sans-serif;
+            }
 
-		<!-- Header -->
-			<header id="header">
-				<a href="index.html" class="title">Hyperspace</a>
-				<nav>
-					<ul>
-						<li><a href="index.html">Home</a></li>
-						<li><a href="generic.html" class="active">Generic</a></li>
-						<li><a href="elements.html">Elements</a></li>
-					</ul>
-				</nav>
-			</header>
+            #header {
+                width: 250px;
+                background: #333;
+                color: white;
+                padding: 20px;
+                height: 100vh;
+                box-sizing: border-box;
+                position: fixed;
+                left: 0;
+                top: 0;
+            }
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+            #header a {
+                color: white;
+                text-decoration: none;
+                font-size: 1.5em;
+            }
 
-				<!-- Main -->
-					<section id="main" class="wrapper">
-						<div class="inner">
-							<h1 class="major">Make a Mind Trailer</h1>
-							<iframe width="560" height="315" src="https://www.youtube.com/embed/igZWgLXdjYE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-						</div>
-					</section>
+            #wrapper {
+                margin-left: 270px; /* Account for the header width */
+                padding: 20px;
+                flex-grow: 1;
+            }
 
-			</div>
+            h1.major {
+                font-size: 2em;
+                margin-bottom: 10px;
+            }
 
-            <div id="wrapper">
+            section {
+                margin-bottom: 30px;
+            }
 
-				<!-- Main -->
-					<section id="main" class="wrapper">
-						<div class="inner">
-							<h1 class="major">For more information, visit: https://yonghuan-hu.github.io/make-a-mind/index.html </h1>
-						</div>
-					</section>
+            img {
+                max-width: 100%;
+                border-radius: 8px;
+            }
+        </style>
+    </head>
+    <body>
 
-			</div>
+        <!-- Header -->
+        <header id="header">
+            <a href="index.html" class="title">Beneath the Dream</a>
+            <nav>
+                <ul>
+                    <li><a href="#description">Description</a></li>
+                    <li><a href="#role">Role</a></li>
+					<li><a href="#work">Sample Drafts</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Wrapper -->
+        <div id="wrapper">
+
+			<!-- Images Section -->
+		<section id="images-section" style="text-align: center; margin-top: 40px;">
+    		<h2>Comic</h2>
+   		 <div style="display: flex; justify-content: center; gap: 10px; flex-wrap: wrap;">
+    		    <img src="images/b1.jpg" alt="Image 1" style="max-width: 30%; height: auto;" />
+    		    <img src="images/b2.jpg" alt="Image 2" style="max-width: 30%; height: auto;" />
+    		    <img src="images/b3.jpg" alt="Image 3" style="max-width: 30%; height: auto;" />
+   		 </div>
+		</section>	
+            <!-- Project Title -->
+            <section id="title-section" style="text-align: center; margin-bottom: 20px;">
+                <h1 class="major">Beneath the Dream (Summer 2024)</h1>
+                <p>Artist</p>
+            </section>
+
+            <!-- Description of the Project -->
+            <section id="description">
+                <h2>Description of the Project</h2>
+                <p>
+                    Beneath the Dream is a short 3-page comic preview I created on the adventure </br>
+					of a homeless girl with her friend in the dream work. The protagonist, Louis, </br>
+					is trying to investigate why there are increasing kidnapping cases within the area, </br>
+					and she does so by entering the dream world with her friend Carlo.
+    			</p>
+            </section>
+
+            <!-- Role in the Project -->
+            <section id="role">
+                <h2>Role in the Project</h2>
+                <p>
+                    This is an individual comic project.
+                </p>
+            </section>
+
+			 <!-- Sample Work -->
+			 <section id="work">
+                <h2>Additional Sample Draft</h2>
+                <img src="images/b4.jpg" alt="Concepts and game assets" />
+            </section>
+
+        </div>
 
 		<!-- Footer -->
 			<footer id="footer" class="wrapper alt">

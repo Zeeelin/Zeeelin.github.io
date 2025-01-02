@@ -5,50 +5,128 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <html>
-	<head>
-		<title>Project 2 by Zelin and Justin</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
+    <head>
+        <title>Subtension</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <style>
+            body {
+                display: flex;
+                margin: 0;
+                font-family: Arial, sans-serif;
+            }
 
-		<!-- Header -->
-			<header id="header">
-				<a href="index.html" class="title">Hyperspace</a>
-				<nav>
-					<ul>
-						<li><a href="index.html">Home</a></li>
-						<li><a href="generic.html" class="active">Generic</a></li>
-						<li><a href="elements.html">Elements</a></li>
-					</ul>
-				</nav>
-			</header>
+            #header {
+                width: 250px;
+                background: #333;
+                color: white;
+                padding: 20px;
+                height: 100vh;
+                box-sizing: border-box;
+                position: fixed;
+                left: 0;
+                top: 0;
+            }
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+            #header a {
+                color: white;
+                text-decoration: none;
+                font-size: 1.5em;
+            }
 
-				<!-- Main -->
-					<section id="main" class="wrapper">
-						<div class="inner">
-							<h1 class="major">Make a Mind Trailer</h1>
-							<iframe width="560" height="315" src="https://www.youtube.com/embed/igZWgLXdjYE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-						</div>
-					</section>
+            #wrapper {
+                margin-left: 270px; /* Account for the header width */
+                padding: 20px;
+                flex-grow: 1;
+            }
 
-			</div>
+            h1.major {
+                font-size: 2em;
+                margin-bottom: 10px;
+            }
 
-            <div id="wrapper">
+            section {
+                margin-bottom: 30px;
+            }
 
-				<!-- Main -->
-					<section id="main" class="wrapper">
-						<div class="inner">
-							<h1 class="major">For more information, visit: https://yonghuan-hu.github.io/make-a-mind/index.html </h1>
-						</div>
-					</section>
+            img {
+                max-width: 100%;
+                border-radius: 8px;
+            }
+        </style>
+    </head>
+    <body>
 
-			</div>
+        <!-- Header -->
+        <header id="header">
+            <a href="index.html" class="title">Subtension</a>
+            <nav>
+                <ul>
+                    <li><a href="#description">Description</a></li>
+                    <li><a href="#role">Role</a></li>
+                    <li><a href="#sample-work">Sample Work</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Wrapper -->
+        <div id="wrapper">
+
+            <!-- Project Title -->
+            <section id="title-section" style="text-align: center; margin-bottom: 20px;">
+                <h1 class="major">Subtension (Fall 2022)</h1>
+                <p>Concept art, Animation, Rigging and Narrative</p>
+            </section>
+
+				<!-- Video Section -->
+						<section id="video-section" style="text-align: center; margin-top: 40px;">
+							<h2>Gameplay Video</h2>
+							<video controls style="max-width: 100%; height: auto;">
+							<source src="images/subtension.webm" type="video/mp4">
+							</video>
+								<p>Gameplay video of Subtension</p>
+							</section>
+
+            <!-- Description of the Project -->
+            <section id="description">
+                <h2>Description of the Project</h2>
+                <p>
+                    Subtension was a submarine simulation roguelike-like case study of Subset Game's FTL: </br>
+					Faster Than Light. It is a two-semester-long project prototyped by the Summer team at </br>
+					WolverineSoft Studio and finished by the Fall team. A total of 40 students worked on this game. 
+				<h2>Link to the game and trailer on Steam</h2>
+    			<p>
+        			<a href="https://store.steampowered.com/app/2251660/Subtension/" target="_blank" style="text-decoration: none; color: #007bff; font-weight: bold;">
+            		Visit the Steam Store
+        			</a>
+    			</p>
+            </section>
+
+            <!-- Role in the Project -->
+            <section id="role">
+                <h2>Role in the Project</h2>
+                <p>
+                    As a member of the art department at WolverineSoft Studio, I was in charge of the background </br>
+					concept art and character animation for this game. I also volunteered in the narrative team to </br>
+					create a multi-ending story of an apocalyptic world where people can only live underwater with </br>
+					the shelter of either a city or submarines.
+                </p>
+            </section>
+
+            <!-- Sample Work -->
+            <section id="sample-work">
+                <h2>Sample Work</h2>
+				<p>
+                    Some of the crew member icon and background art drawn for this game.
+                </p>
+                <img src="images/s1.jpg" alt="Sample Crew Member" />
+				<img src="images/s3.jpg" alt="Sample Background" />
+				<img src="images/s2.jpg" alt="Sample Background" />
+				<img src="images/s4.jpg" alt="Sample Background" />
+
+            </section>
+
+        </div>
 
 		<!-- Footer -->
 			<footer id="footer" class="wrapper alt">

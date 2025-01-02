@@ -5,50 +5,122 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <html>
-	<head>
-		<title>Project 2 by Zelin and Justin</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
+    <head>
+        <title>Pumkpkin - Take Me Home</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <style>
+            body {
+                display: flex;
+                margin: 0;
+                font-family: Arial, sans-serif;
+            }
 
-		<!-- Header -->
-			<header id="header">
-				<a href="index.html" class="title">Hyperspace</a>
-				<nav>
-					<ul>
-						<li><a href="index.html">Home</a></li>
-						<li><a href="generic.html" class="active">Generic</a></li>
-						<li><a href="elements.html">Elements</a></li>
-					</ul>
-				</nav>
-			</header>
+            #header {
+                width: 250px;
+                background: #333;
+                color: white;
+                padding: 20px;
+                height: 100vh;
+                box-sizing: border-box;
+                position: fixed;
+                left: 0;
+                top: 0;
+            }
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+            #header a {
+                color: white;
+                text-decoration: none;
+                font-size: 1.5em;
+            }
 
-				<!-- Main -->
-					<section id="main" class="wrapper">
-						<div class="inner">
-							<h1 class="major">Make a Mind Trailer</h1>
-							<iframe width="560" height="315" src="https://www.youtube.com/embed/igZWgLXdjYE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-						</div>
-					</section>
+            #wrapper {
+                margin-left: 270px; /* Account for the header width */
+                padding: 20px;
+                flex-grow: 1;
+            }
 
-			</div>
+            h1.major {
+                font-size: 2em;
+                margin-bottom: 10px;
+            }
 
-            <div id="wrapper">
+            section {
+                margin-bottom: 30px;
+            }
 
-				<!-- Main -->
-					<section id="main" class="wrapper">
-						<div class="inner">
-							<h1 class="major">For more information, visit: https://yonghuan-hu.github.io/make-a-mind/index.html </h1>
-						</div>
-					</section>
+            img {
+                max-width: 100%;
+                border-radius: 8px;
+            }
+        </style>
+    </head>
+    <body>
 
-			</div>
+        <!-- Header -->
+        <header id="header">
+            <a href="index.html" class="title">The Seed</a>
+            <nav>
+                <ul>
+                    <li><a href="#description">Description</a></li>
+                    <li><a href="#role">Role</a></li>
+					<li><a href="#role">Sample Role</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Wrapper -->
+        <div id="wrapper">
+
+            <!-- Project Title -->
+            <section id="title-section" style="text-align: center; margin-bottom: 20px;">
+                <h1 class="major">The Seed (Winter 2023)</h1>
+                <p>Programmer</p>
+            </section>
+
+			<!-- Video Section -->
+			<section id="video-section" style="text-align: center; margin-top: 40px;">
+    		<h2>Gameplay Video</h2>
+    		<video controls style="max-width: 100%; height: auto;">
+    	    <source src="images/935.mp4" type="video/mp4">
+   		 </video>
+   			 <p>Gameplay video of The Seed</p>
+			</section>
+
+            <!-- Description of the Project -->
+            <section id="description">
+                <h2>Description of the Project</h2>
+                <p>
+                    The Seed was a game created during the 48 hours of Global Game Jam 2023. It is a </br>
+					point-and-click narrative game inspired by the game Bad Dream Coma. The game tells </br>
+					the story of a rookie detective investigating a serial killer case that targets the </br>
+					police and related personnel. 
+                </p>
+				<h2>Link to the itch.io page</h2>
+    			<p>
+        			<a href="https://globalgamejam.org/2023/games/seed-5" target="_blank" style="text-decoration: none; color: #007bff; font-weight: bold;">
+            		The Seed
+        			</a>
+    			</p>
+            </section>
+
+            <!-- Role in the Project -->
+            <section id="role">
+                <h2>Role in the Project</h2>
+                <p>
+                    I teamed up with one other artist to work together during this game jam. I worked mostly </br>
+					as a programmer and helped with some of the UI art. The game engine we used was Unity, and </br>
+					we designed the game's narrative together. Unfortunately, we were not able to finish the game </br>
+					in 48 hours, given the scope of the script. It was a rush for both the artist and me as the </br>
+					programmer. It was the first game jam in which I was the only programmer on the team. I was able </br>
+					to learn a lot by consulting the local Jam host, the programming lead at WolverineSoft Studio. </br>
+					He taught me a lot of shortcuts in Unity, so I do believe that if I decide to recreate this game, </br>
+					I could make it much more polished in a shorter time period. Overall, this was a valuable experience </br>
+					for me.
+                </p>
+            </section>
+
+        </div>
 
 		<!-- Footer -->
 			<footer id="footer" class="wrapper alt">

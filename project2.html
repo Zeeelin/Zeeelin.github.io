@@ -5,39 +5,121 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <html>
-	<head>
-		<title>Project 2 by Zelin and Justin</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
+    <head>
+        <title>Make a Mind</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <style>
+            body {
+                display: flex;
+                margin: 0;
+                font-family: Arial, sans-serif;
+            }
 
-		<!-- Header -->
-			<header id="header">
-				<a href="index.html" class="title">Hyperspace</a>
-				<nav>
-					<ul>
-						<li><a href="index.html">Home</a></li>
-						<li><a href="generic.html" class="active">Generic</a></li>
-						<li><a href="elements.html">Elements</a></li>
-					</ul>
-				</nav>
-			</header>
+            #header {
+                width: 250px;
+                background: #333;
+                color: white;
+                padding: 20px;
+                height: 100vh;
+                box-sizing: border-box;
+                position: fixed;
+                left: 0;
+                top: 0;
+            }
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+            #header a {
+                color: white;
+                text-decoration: none;
+                font-size: 1.5em;
+            }
 
-				<!-- Main -->
-					<section id="main" class="wrapper">
-						<div class="inner">
-							<h1 class="major">Project 2 AR Demonstration</h1>
-							<iframe width="560" height="315" src="https://www.youtube.com/embed/xBYI1wH3AJw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-						</div>
-					</section>
+            #wrapper {
+                margin-left: 270px; /* Account for the header width */
+                padding: 20px;
+                flex-grow: 1;
+            }
 
-			</div>
+            h1.major {
+                font-size: 2em;
+                margin-bottom: 10px;
+            }
+
+            section {
+                margin-bottom: 30px;
+            }
+
+            img {
+                max-width: 100%;
+                border-radius: 8px;
+            }
+        </style>
+    </head>
+    <body>
+
+        <!-- Header -->
+        <header id="header">
+            <a href="index.html" class="title">Make A Mind</a>
+            <nav>
+                <ul>
+                    <li><a href="#description">Description</a></li>
+                    <li><a href="#role">Role</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Wrapper -->
+        <div id="wrapper">
+
+            <!-- Project Title -->
+            <section id="title-section" style="text-align: center; margin-bottom: 20px;">
+                <h1 class="major">Make A Mind (Winter 2023)</h1>
+                <p>Programmer</p>
+            </section>
+
+			<!-- Project Images -->
+			<section id="project-images" style="text-align: center; margin-bottom: 20px;">
+				<img src="images/p22.png" alt="Project Image 1" style="max-width: 45%; margin: 10px;" />
+				<img src="images/p23.png" alt="Project Image 2" style="max-width: 45%; margin: 10px;" />
+				<p> 3D building in Unreal Engine 5 using Unreal's particle system to create a cozy place<br />
+					 for users to practice the memory palace technique.
+					 <p>
+			</section>
+
+            <!-- Description of the Project -->
+            <section id="description">
+                <h2>Description of the Project</h2>
+                <p>
+                    Make a Mind is a virtual reality application aiming to implement some traditional psychological<br />
+					therapies into the virtual world, providing more affordable and accessible psychological therapies <br />
+					for people in need. It contains four minigames from music boxes to destruction therapy to exposure <br />
+					therapy and memory palace.
+                </p>
+				<h2>Link to the product page with detailed devblogs</h2>
+    			<p>
+        			<a href="https://yonghuan-hu.github.io/make-a-mind/index.html" target="_blank" style="text-decoration: none; color: #007bff; font-weight: bold;">
+            		Make a Mind
+        			</a>
+    			</p>
+            </section>
+
+            <!-- Role in the Project -->
+            <section id="role">
+                <h2>Role in the Project</h2>
+                <p>
+                    My role in this project is mostly creating the memory palace mini-game in Unreal Engine 5 using blueprints. <br />
+					Memory as an important subject in cognitive psychology has always been intriguing to me, and I was curious <br />
+					whether practicing this technique in virtual reality could help people to utilize it. <br />
+					<br />
+					Here is a short description of how the memory palace works: The tranquil study room in this virtual palace <br />
+					features seven objects attached to pieces of furniture arranged in clockwise order. Users are encouraged to <br />
+					explore the room, become familiar with the objects, and remember them in the exact same sequence each time they <br />
+					revisit the palace. Spatial association helps players enhance memory retention, and a tutorial is also included <br />
+					to guide users around.
+                </p>
+            </section>
+
+        </div>
 
 		<!-- Footer -->
 			<footer id="footer" class="wrapper alt">

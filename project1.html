@@ -5,39 +5,119 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <html>
-	<head>
-		<title>Project 1 by Zelin and Jacob</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
+    <head>
+        <title>Curse of the Corsair</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <style>
+            body {
+                display: flex;
+                margin: 0;
+                font-family: Arial, sans-serif;
+            }
 
-		<!-- Header -->
-			<header id="header">
-				<a href="index.html" class="title">Hyperspace</a>
-				<nav>
-					<ul>
-						<li><a href="index.html">Home</a></li>
-						<li><a href="generic.html" class="active">Generic</a></li>
-						<li><a href="elements.html">Elements</a></li>
-					</ul>
-				</nav>
-			</header>
+            #header {
+                width: 250px;
+                background: #333;
+                color: white;
+                padding: 20px;
+                height: 100vh;
+                box-sizing: border-box;
+                position: fixed;
+                left: 0;
+                top: 0;
+            }
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+            #header a {
+                color: white;
+                text-decoration: none;
+                font-size: 1.5em;
+            }
 
-				<!-- Main -->
-					<section id="main" class="wrapper">
-						<div class="inner">
-							<h1 class="major">Project 1 BBB Video Demonstration</h1>
-							<iframe width="560" height="315" src="https://www.youtube.com/embed/jS_ZfiJvKKc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-						</div>
-					</section>
+            #wrapper {
+                margin-left: 270px; /* Account for the header width */
+                padding: 20px;
+                flex-grow: 1;
+            }
 
-			</div>
+            h1.major {
+                font-size: 2em;
+                margin-bottom: 10px;
+            }
+
+            section {
+                margin-bottom: 30px;
+            }
+
+            img {
+                max-width: 100%;
+                border-radius: 8px;
+            }
+        </style>
+    </head>
+    <body>
+
+        <!-- Header -->
+        <header id="header">
+            <a href="index.html" class="title">Curse of the Corsair</a>
+            <nav>
+                <ul>
+                    <li><a href="#description">Description</a></li>
+                    <li><a href="#role">Role</a></li>
+                    <li><a href="#sample-work">Sample Work</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Wrapper -->
+        <div id="wrapper">
+
+            <!-- Project Title -->
+            <section id="title-section" style="text-align: center; margin-bottom: 20px;">
+                <h1 class="major">Curse of the Corsair (Winter 2023)</h1>
+                <p>UI/UX, Animation, and Rigging</p>
+            </section>
+
+			<!-- Project Images -->
+			<section id="project-images" style="text-align: center; margin-bottom: 20px;">
+				<img src="images/p12.jpg" alt="Project Image 1" style="max-width: 45%; margin: 10px;" />
+				<img src="images/p13.jpg" alt="Project Image 2" style="max-width: 45%; margin: 10px;" />
+			</section>
+
+            <!-- Description of the Project -->
+            <section id="description">
+                <h2>Description of the Project</h2>
+                <p>
+                    Curse of the Corsair is a pirate-themed case study of Heart Machine's Hyper Light Drifter.<br />
+                    It was created by 40 students at the University of Michigan's WolverineSoft Studio.<br />
+                </p>
+				<h2>Link to the game and trailer on Steam</h2>
+    			<p>
+        			<a href="https://store.steampowered.com/app/2365570/Curse_of_the_Corsair/" target="_blank" style="text-decoration: none; color: #007bff; font-weight: bold;">
+            		Visit the Steam Store
+        			</a>
+    			</p>
+            </section>
+
+            <!-- Role in the Project -->
+            <section id="role">
+                <h2>Role in the Project</h2>
+                <p>
+                    As a member of the art department at WolverineSoft Studio, I joined the User Experience<br />
+                    pod creating UI/UX art assets. I was responsible for designing intuitive interfaces influenced<br />
+                    by the minimalist approach in the original Hyper Light Drifter. In addition, I worked closely<br />
+                    with artists and programmers from the character design pod to create and rig character animation<br />
+                    for players and enemies. Some of the animation includes, player attack, enemy attack, player death etc.
+                </p>
+            </section>
+
+            <!-- Sample Work -->
+            <section id="sample-work">
+                <h2>Sample Work</h2>
+                <img src="images/p11.jpg" alt="Sample Icon Design" />
+            </section>
+
+        </div>
 
 		<!-- Footer -->
 			<footer id="footer" class="wrapper alt">

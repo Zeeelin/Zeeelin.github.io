@@ -10,6 +10,7 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/portfolio-refresh.css" />
 	</head>
 	<body class="is-preload">
 
@@ -55,22 +56,20 @@
 			<div id="main">
 
 				<!-- Intro -->
-				<section id="top" class="one dark cover" style="padding: 20px 0;">
-					<div class="container" style="display: flex; align-items: center; gap: 20px;">
+				<section id="top" class="one dark cover intro-section">
+					<div class="container intro-layout">
 						<!-- Introduction Text -->
-						<div style="flex: 1;">
+						<div class="intro-copy">
 							<header>
-								<h2 class="alt">Hi! </h2>
-								<p> This is Zelin Chen. I am a graduate student studying Entertainment Technology at Carnegie Mellon University.
-									I am a programmer interested in art and technical art.</p>
+								<h2 class="alt">Hi!</h2>
+								<p>I'm Zelin Chen, a graduate student studying Entertainment Technology at Carnegie Mellon University.
+									I'm a technical designer interested in bridging game design and development, with a focus on gameplay systems and visual experiences.</p>
 							</header>
 						</div>
-						
-						 
-						<div style="flex: 1; text-align: center;">
-							<img src="images/banner4.png" alt="Introduction Photo" style="max-height: 500px; width: auto; border-radius: 10px;" />
+
+						<div class="intro-image">
+							<img src="images/banner4.png" alt="Illustration by Zelin Chen" />
 						</div>
-						
 					</div>
 				</section>
 				
@@ -80,82 +79,67 @@
 
 							<header>
 								<h2>Portfolio</h2>
+								<p>Explore my work across gameplay systems, programming, art, and real-time visuals.</p>
 							</header>
 
-							<div class="row">
-								<div class="col-4 col-12-mobile">
-									<article class="item">
-										<a href="project1.html" class="image fit"><img src="images/project1.jpg" alt="Curse of the Corsair" /></a>
-										<header>
-											<h3>Curse of the Corsair</h3>
-											<p>UI/UX, Animation, and Rigging</p>
-										</header>
-									</article>
-									<article class="item">
-										<a href="project8.html" class="image fit"><img src="images/m1.png" alt="" /></a>
-										<header>
-											<h3>Technical Art Practice</h3>
-											<p>Houdini</p>
-										</header>
-									</article>
-									<article class="item">
-										<a href="project6.html" class="image fit"><img src="images/project6.jpg" alt="" /></a>
-										<header>
-											<h3>Pumpkin - Take Me Home</h3>
-											<p>2D art and Animation</p>
-										</header>
-									</article>
+							<div class="portfolio-tabs" role="tablist" aria-label="Portfolio categories">
+								<button class="portfolio-tab active" type="button" role="tab" aria-selected="true" data-filter="technical">Technical Design &amp; Programming</button>
+								<button class="portfolio-tab" type="button" role="tab" aria-selected="false" data-filter="art">Art &amp; Technical Art</button>
+							</div>
 
-								</div>
-
-								<div class="col-4 col-12-mobile">
-									<article class="item">
-										<a href="project5.html" class="image fit"><img src="images/project7.jpg" alt="Curse of the Corsair" /></a>
-										<header>
-											<h3>Beneath the Dream (Comic)</h3>
-											<p>Artist</p>
-										</header>
-									</article>
-									<article class="item">
-										<a href="project2.html" class="image fit"><img src="images/project3.png" alt="" /></a>
-										<header>
-											<h3>Make a Mind (Capstone Project)</h3>
-											<p>Programmer</p>
-										</header>
-									</article>
-									<article class="item">
-										<a href="project7.html" class="image fit"><img src="images/project5.png" alt="" /></a>
-										<header>
-											<h3>Regnork TD</h3>
-											<p>2D Artist</p>
-										</header>
-									</article>
-
-								</div>
-								<div class="col-4 col-12-mobile">
-									<article class="item">
-										<a href="project3.html" class="image fit"><img src="images/project4.jpg" alt="" /></a>
-										<header>
-											<h3>Subtension</h3>
-											<p>Concept art, Animation, Rigging and Narrative</p>
-										</header>
-									</article>
-									<article class="item">
-										<a href="project9.html" class="image fit"><img src="images/ggj1.png" alt="" /></a>
-										<header>
-											<h3>BREATHLESS (Global Game Jam 2026)</h3>
-											<p>Programmer, 2D Artist</p>
-										</header>
-									</article>
-									<article class="item">
-										<a href="project4.html" class="image fit"><img src="images/project2.png" alt="" /></a>
-										<header>
-											<h3>The Seed</h3>
-											<p>Programmer</p>
-										</header>
-									</article>
-
-								</div>
+							<div class="portfolio-grid" aria-live="polite">
+								<article class="item portfolio-card" data-category="technical">
+									<a href="project10.html" class="image fit"><img src="images/ThelastVoyageOfThePicasso Poster Art.png" alt="Poster art for The Last Voyage of the Picasso" /></a>
+									<header><h3>The Last Voyage of the Picasso</h3><p>Programmer · Technical Designer · VR</p></header>
+								</article>
+								<article class="item portfolio-card" data-category="technical">
+									<a href="project11.html" class="image fit"><img src="images/foldward.png" alt="Foldward title screen" /></a>
+									<header><h3>Foldward</h3><p>Programmer</p></header>
+								</article>
+								<article class="item portfolio-card" data-category="technical">
+									<a href="project12.html" class="image fit"><img src="images/SignerMangoTitle.png" alt="Signer and Mango title screen" /></a>
+									<header><h3>Signer and Mango</h3><p>Programmer · Technical Designer</p></header>
+								</article>
+								<article class="item portfolio-card" data-category="technical">
+									<a href="project2.html" class="image fit"><img src="images/project3.png" alt="Make a Mind virtual reality project" /></a>
+									<header><h3>Make a Mind</h3><p>Programmer</p></header>
+								</article>
+								<article class="item portfolio-card" data-category="technical art">
+									<a href="project9.html" class="image fit"><img src="images/ggj1.png" alt="Breathless underwater game" /></a>
+									<header><h3>BREATHLESS (Global Game Jam 2026)</h3><p>Programmer · 2D Artist</p></header>
+								</article>
+								<article class="item portfolio-card" data-category="technical">
+									<a href="project4.html" class="image fit"><img src="images/project2.png" alt="The Seed game" /></a>
+									<header><h3>The Seed</h3><p>Programmer</p></header>
+								</article>
+								<article class="item portfolio-card" data-category="art">
+									<a href="project13.html" class="image fit"><img src="images/mech-vs-kaiju-cover.png" alt="Kaiju rendered for Mech vs Kaiju" /></a>
+									<header><h3>Mech vs Kaiju</h3><p>Rendering · Compositing · Shaders</p></header>
+								</article>
+								<article class="item portfolio-card" data-category="art">
+									<a href="project1.html" class="image fit"><img src="images/project1.jpg" alt="Curse of the Corsair" /></a>
+									<header><h3>Curse of the Corsair</h3><p>UI/UX · Animation · 2D Rigging</p></header>
+								</article>
+								<article class="item portfolio-card" data-category="art">
+									<a href="project8.html" class="image fit"><img src="images/m1.png" alt="Houdini technical art study" /></a>
+									<header><h3>Technical Art Practice</h3><p>Houdini</p></header>
+								</article>
+								<article class="item portfolio-card" data-category="art">
+									<a href="project6.html" class="image fit"><img src="images/project6.jpg" alt="Pumpkin - Take Me Home" /></a>
+									<header><h3>Pumpkin - Take Me Home</h3><p>2D Art · Animation</p></header>
+								</article>
+								<article class="item portfolio-card" data-category="art">
+									<a href="project5.html" class="image fit"><img src="images/project7.jpg" alt="Beneath the Dream comic" /></a>
+									<header><h3>Beneath the Dream (Comic)</h3><p>Art</p></header>
+								</article>
+								<article class="item portfolio-card" data-category="art">
+									<a href="project7.html" class="image fit"><img src="images/project5.png" alt="Ragnarök TD" /></a>
+									<header><h3>Ragnarök TD</h3><p>2D Art</p></header>
+								</article>
+								<article class="item portfolio-card" data-category="art">
+									<a href="project3.html" class="image fit"><img src="images/project4.jpg" alt="Subtension game" /></a>
+									<header><h3>Subtension</h3><p>Concept Art · Animation · Rigging · Narrative</p></header>
+								</article>
 							</div>
 
 						</div>
@@ -177,7 +161,6 @@
 
 						</div>
 					</section>
-]
 				<!-- Contact -->
 					<section id="contact" class="four">
 						<div class="container">
@@ -187,7 +170,6 @@
 							</header>
 
 							<p>zelinclin@gmail.com</p>
-							</form>
 
 						</div>
 					</section>
@@ -212,6 +194,7 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script src="assets/js/portfolio-filter.js"></script>
 
 	</body>
 </html>
